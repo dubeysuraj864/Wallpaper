@@ -14,9 +14,12 @@ body{
  }
 
 .row{
+    background-color: gray;
     text-align: center;
+    padding: 20px 0;
 }
 .row img{
+
     width: auto ;
     padding: 5px;
     display: inline-block;
@@ -68,7 +71,7 @@ header .logo{
 nav{
     background-color: rgb(31, 31, 31);
     padding: 10px;
-    margin-bottom: 20px;
+
 }
 nav a{
     text-decoration: none;
@@ -106,11 +109,34 @@ footer p{
 .contact{
     color: white;
 }
+.contact a{
+    transition: transform 1.2s;
+}
+.contact a:hover{
+    transition: transform 1.2s;
+}
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 56300px){
     body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    nav a{
+        font-size: 18px ;
+    }
+    footer h2{
+        font-size: 50px ;
+    }
+    footer p,hr{
         margin-left: 20%;
         margin-right: 20%;
+        font-size: 20px;
+    }
+    footer span{
+        font-size: 50px ;
+    }
+    footer a{
+        padding: 20px;
     }
 }
 
