@@ -11,22 +11,17 @@ body{
      background-color: rgb(55, 55, 55);
     font-family: helvetica;
     font-weight: bold;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+ }
 
 .row{
     text-align: center;
 }
 .row img{
+    padding: 5px;
     display: inline-block;
-    flex-wrap: wrap;
-    vertical-align: middle;
-    flex: 50%;
     transition: transform .2s;
-    border-radius: 20px;
+    border-radius: 10px;
+    width: 30%;
 }
 .row img:hover{
     
