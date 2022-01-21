@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
 
 *{
     box-sizing: border-box;
@@ -8,13 +8,13 @@
 body{  
     margin: 0;
     padding: 0;
-     background-color: rgb(55, 55, 55);
-    font-family: helvetica;
+     background-color: grey;
+     font-family: system-ui;
     font-weight: bold;
  }
 
 .row{
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
 }
@@ -34,61 +34,83 @@ body{
 header{
     display:flex;
     justify-content: space-between;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0) ;
+    color: rgb(80, 80, 80);
 }
 
 header .search{
     display: flex;
-    float: right;
-    background-color: black;
-    color: white;
     padding: 15px;
     justify-content: space-around;
 }
+.search span{
+    padding: 0 10px 5px 5px;
+    color: black;
+    background-color: black;
+}
+
 
 header .logo{
     display: flex;
+    justify-items: center;
+    align-content: center;
     float: left;
-    background-color: black;
     color: white;
     padding: 15px;
 }
-.yellowhub{
-    background-color: rgb(255, 174, 0);
+.heavan{
     padding: 2px 5px;
-    color: black;
-    border-radius: 5px;
     font-weight: bold;
     
 }
 .headertext{
-    background-color: rgb(0, 0, 0);
+    font-size: 20px;
     padding: 2px 5px;
-    color:white;
+    color: grey;
     border-radius: 5px;
+    animation-name: example;
+    animation: example 4s ease-out infinite;
+   
+}
+@keyframes example {
+   
+    0%   {color:rgb(255, 57, 57);}
+    25%  {color:rgb(255, 255, 58);}
+    50%  {color:rgb(59, 183, 255);}
+    75%  {color:rgb(92, 255, 92);}
+    100% {color:rgb(249, 67, 255); }
+    
 }
 nav{
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(245, 245, 245);
     padding: 10px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
 
 }
-nav a{
+
+nav img{
+    border-radius: 20px;
+    width: 90%;
     text-decoration: none;
-    color: white;
+    color: rgb(34, 34, 34);
     padding: 10px;
     text-decoration: none;
-    font-size: 12px;  
+    transition: transform .2s; 
+    animation: slider 5s ease-in infinite;    
 }
 
-nav a:hover{
-    color: rgb(255, 174, 0);
+
+nav img:hover{
+    transform: scale(1.1);
 }
 
 
 footer{
   
-    background-color: rgb(31, 31, 31);
+        
+    background-color: rgb(255, 255, 255) ;
     width: auto;
     text-align: center;
     padding: 20px;
@@ -96,18 +118,22 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color:white;
+    color:rgb(46, 46, 46);
     padding: 10px;
     font-size: 30px;
 
 }
+footer h2{
+    color: rgb(0, 0, 0);
+}
 footer p{
     padding: 10px 10px;
-    color: white;
+    color: rgb(105, 105, 105);
     font-size: 10px;
+    text-align: center;
 }
 .contact{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .contact a{
     transition: transform 1.2s;
@@ -143,7 +169,7 @@ footer p{
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
     body {
-      background-color: rgb(71, 71, 71);
+      background-color: rgb(235, 235, 235);
     }
     footer p,hr{
        margin-left: 20%;
@@ -162,7 +188,7 @@ footer p{
       }
     body {
         margin: 0;
-      background-color: olive;
+      /* background-color: olive; */
       width: 100%;
     }
     header{
@@ -189,3 +215,4 @@ footer p{
     footer a{
         padding: 20px;
     }
+}
