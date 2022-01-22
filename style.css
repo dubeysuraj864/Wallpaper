@@ -26,7 +26,7 @@ body{
  }
 .search{
     display: flex;
-    margin-right: 100px;
+    
 }
  form.example input[type=text] {
     padding: 10px;
