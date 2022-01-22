@@ -31,82 +31,6 @@ body{
     
     transform: scale(1.1);
 }
-header{
-    display:flex;
-    justify-content: space-between;
-    background-color: rgb(0, 0, 0) ;
-    color: rgb(80, 80, 80);
-}
-
-header .search{
-    display: flex;
-    padding: 15px;
-    justify-content: space-around;
-}
-.search span{
-    padding: 0 10px 5px 5px;
-    color: black;
-    background-color: black;
-}
-
-
-header .logo{
-    display: flex;
-    justify-items: center;
-    align-content: center;
-    float: left;
-    color: white;
-    padding: 15px;
-}
-.heavan{
-    padding: 2px 5px;
-    font-weight: bold;
-    
-}
-.headertext{
-    font-size: 20px;
-    padding: 2px 5px;
-    color: grey;
-    border-radius: 5px;
-    animation-name: example;
-    animation: example 4s ease-out infinite;
-   
-}
-@keyframes example {
-   
-    0%   {color:rgb(255, 57, 57);}
-    25%  {color:rgb(255, 255, 58);}
-    50%  {color:rgb(59, 183, 255);}
-    75%  {color:rgb(92, 255, 92);}
-    100% {color:rgb(249, 67, 255); }
-    
-}
-nav{
-    background-color: rgb(245, 245, 245);
-    padding: 10px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 40px;
-
-}
-
-nav img{
-    border-radius: 20px;
-    width: 90%;
-    text-decoration: none;
-    color: rgb(34, 34, 34);
-    padding: 10px;
-    text-decoration: none;
-    transition: transform .2s; 
-    animation: slider 5s ease-in infinite;    
-}
-
-
-nav img:hover{
-    transform: scale(1.1);
-}
-
-
 footer{
   
         
@@ -147,9 +71,7 @@ footer p{
         margin-left: 10%;
         margin-right: 10%;
     }
-    nav a{
-        font-size: 18px ;
-    }
+ 
     footer h2{
         font-size: 50px ;
     }
@@ -191,16 +113,8 @@ footer p{
       /* background-color: olive; */
       width: 100%;
     }
-    header{
-        width: 100%;
-        height: auto;
-    }
-    nav{
-        width: 100%;
-    }
-    nav a{
-        font-size: 12px;
-    }
+  
+  
     .row img{
         width: 30%;
     }
