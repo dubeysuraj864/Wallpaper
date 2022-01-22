@@ -21,11 +21,16 @@ body{
 
  }
  .logo img{
+    display: flex;
+    justify-content: space-between;
     border-radius: 100px;
     margin-left: 30px;
  }
 .search{
+
     display: flex;
+    justify-content: space-between;
+    float: right;
     
 }
  form.example input[type=text] {
